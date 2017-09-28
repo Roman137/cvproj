@@ -1,6 +1,6 @@
 import {inject, TestBed} from '@angular/core/testing';
 
-import {JsonDataService} from './json-data.service';
+import {JsonDataService} from './cv-data.service';
 
 describe('JsonDataService', () => {
   beforeEach(() => {

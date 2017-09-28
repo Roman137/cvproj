@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {JsonDataService} from '../services/json-data.service';
+import {CvDataService} from '../shared/services/cv-data.service';
 
 @Component({
   selector: 'app-about-me',
@@ -10,11 +10,11 @@ export class AboutMeComponent implements OnInit {
 
   aboutMe = null;
 
-  constructor(private jsonDataService: JsonDataService) {
+  constructor(private cvDataService: CvDataService) {
   }
 
   ngOnInit() {
-    this.aboutMe = this.jsonDataService.aboutMe();
+    this.aboutMe = this.cvDataService.getCvData().about;
   }
 
 }
