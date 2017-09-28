@@ -1,8 +1,7 @@
 export interface CvData {
 
   about: string,
-  skills: string[],
-  hobbies: string[],
+  skillsAndHobbies: string[],
   education: string[]
 
 }

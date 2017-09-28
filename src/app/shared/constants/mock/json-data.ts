@@ -4,12 +4,13 @@ export const jsonObject = {
   'Addicted to mystery and books. Love sci-fi movies and difficult video games.' +
   'Attracted to smart people and interesting discussions.' +
   'I\'m fond of solving complex problems and not afraid of mentally arduous tasks.',
-  'skills': [
-    'html/css/javascript',
+  'skillsAndHobbies': [
+    'html',
+    'css',
+    'javascript',
+    'java',
     'drinking coffee',
-    'sleeping overly hours'
-  ],
-  'hobbies': [
+    'sleeping',
     'playing guitar',
     'learning new stuff'
   ],
@@ -17,6 +18,6 @@ export const jsonObject = {
     'School-Liceum #23, City of Ivano-Frankivsk, 2009',
     'Bachelor\'s degree in Computer Science, 2013',
     'SoftServe IT Academy "Java Web Development Course", 2013',
-    'Master\' degree in Computer Science, 2014'
+    'Master\'s degree in Computer Science, 2014'
   ]
 };
