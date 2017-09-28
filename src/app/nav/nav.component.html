@@ -1,5 +1,14 @@
-<md-list dense class="nav-list">
-  <md-list-item *ngFor="let navPath of getNavPaths()">
-    <button md-button routerLink="{{navPath.path}}" routerLinkActive="active">{{navPath.title}}</button>
-  </md-list-item>
-</md-list>
+<md-sidenav-container (mouseenter)="sidenav.open()" (mouseleave)="sidenav.close()">
+  <md-sidenav #sidenav mode="push">
+    <md-list dense class="nav-list">
+      <md-list-item *ngFor="let navPath of getNavPaths()">
+        <button color="primary" md-button routerLink="{{navPath.path}}" routerLinkActive="mat-accent">
+          {{navPath.title}}
+        </button>
+      </md-list-item>
+    </md-list>
+  </md-sidenav>
+  <div class="main-outlet">
+    <router-outlet></router-outlet>
+  </div>
+</md-sidenav-container>

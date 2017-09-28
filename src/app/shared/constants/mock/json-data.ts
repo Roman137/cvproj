@@ -9,7 +9,7 @@ export const jsonObject = {
     'css',
     'javascript',
     'java',
-    'drinking coffee',
+    'having a cuppa',
     'sleeping',
     'playing guitar',
     'learning new stuff'

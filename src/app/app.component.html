@@ -1,16 +1,9 @@
 <!--The whole content below can be removed with the new code.-->
-<div class="header">
-  <h1>
-    {{welcomeMsg}}
-  </h1>
-</div>
-
-<md-sidenav-container (mouseenter)="sidenav.open()" (mouseleave)="sidenav.close()">
-  <md-sidenav #sidenav mode="side">
-    <app-nav></app-nav>
-  </md-sidenav>
-  <div class="main-outlet">
-    <router-outlet></router-outlet>
+<div>
+  <div class="header" style="text-align: center">
+    <h1>{{welcomeMsg}}</h1>
   </div>
-</md-sidenav-container>
+
+  <app-nav></app-nav>
+</div>
 

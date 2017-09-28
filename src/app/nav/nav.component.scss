@@ -1,28 +1,34 @@
-//ul.nav-list {
-//  list-style: none;
-//  font-size: 14px;
-//  li {
-//    display: inline-block;
-//    border: 2px antiquewhite solid;
-//    background-color: #7B56FF;
-//    padding: 3px;
-//    margin: 1px;
-//    a {
-//      color: #5BFFF8;
-//    }
-//  }
-//}
-
-md-sidenav-container {
-  width: 100%;
-  height: 100%;
-}
+@import '~@angular/material/prebuilt-themes/indigo-pink';
 
 .active {
-  background-color: green;
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   -ms-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
+
+}
+
+md-list {
+  md-list-item {
+    button {
+      width: 100%;
+      display: inline;
+    }
+  }
+}
+
+md-sidenav {
+  overflow: hidden;
+}
+
+.main-outlet {
+  min-width: 800px;
+  min-height: 100px;
+  padding: 10px;
+}
+
+md-sidenav-container {
+  width: 100%;
+  height: 100%;
 }
