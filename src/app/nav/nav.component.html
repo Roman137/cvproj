@@ -1,5 +1,5 @@
 <md-list dense class="nav-list">
   <md-list-item *ngFor="let navPath of getNavPaths()">
-    <button md-button routerLink="{{navPath.path}}" routerLinkActive="active">{{navPath.name}}</button>
+    <button md-button routerLink="{{navPath.path}}" routerLinkActive="active">{{navPath.title}}</button>
   </md-list-item>
 </md-list>

@@ -1,6 +1,6 @@
 export const navPaths = [
-  {path: '/about-me', name: 'About me'},
-  {path: '/skills', name: 'Skills'},
-  {path: '/hobbies', name: 'Hobbies'},
-  {path: '/education', name: 'Education'}
+  {path: '/about-me', title: 'About me'},
+  {path: '/skills', title: 'Skills'},
+  {path: '/hobbies', title: 'Hobbies'},
+  {path: '/education', title: 'Education'}
 ];
