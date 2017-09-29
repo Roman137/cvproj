@@ -13,7 +13,7 @@ export class EducationComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.education = this.cvDataService.getCvData().education;
+    this.cvDataService.getCvData().subscribe(res => this.education = res.education);
   }
 
 }

@@ -1,4 +1,4 @@
-export const jsonObject = {
+export const cvData = {
   'about': 'My name is Roman. I was born in 1992 in Ivano-Frankivsk, Ukraine. ' +
   'I like playing guitar, composing music and reading the internet. ' +
   'Addicted to mystery and books. Love sci-fi movies and difficult video games.' +
@@ -15,7 +15,7 @@ export const jsonObject = {
     'learning new stuff'
   ],
   'education': [
-    'School-Liceum #23, City of Ivano-Frankivsk, 2009',
+    'School-Lyceum #23, City of Ivano-Frankivsk, 2009',
     'Bachelor\'s degree in Computer Science, 2013',
     'SoftServe IT Academy "Java Web Development Course", 2013',
     'Master\'s degree in Computer Science, 2014'

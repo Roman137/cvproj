@@ -7,11 +7,13 @@ import {appRoutes} from './shared/constants/routes/app-routes';
 import {NavComponent} from './nav/nav.component';
 import {AboutMeComponent} from './about-me/about-me.component';
 import {EducationComponent} from './education/education.component';
-import {CustomMaterialModule} from './custom-material.module';
+import {CustomMaterialModule} from './shared/custom-material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CvDataService} from './shared/services/cv-data.service';
-import {CvDataMockService} from './shared/services/mock/cv-data-mock.service';
 import {SkillsAndHobbiesComponent} from './skills-and-hobbies/skills-and-hobbies.component';
+import {URI_CONFIG} from './shared/config/di-tokens/uri.config';
+import {STANDARD_URI_CONFIG} from './shared/config/standard-uri-config';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -26,10 +28,13 @@ import {SkillsAndHobbiesComponent} from './skills-and-hobbies/skills-and-hobbies
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     CustomMaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [
-    {provide: CvDataService, useClass: CvDataMockService}
+    HttpClient,
+    {provide: CvDataService, useClass: CvDataService},
+    {provide: URI_CONFIG, useValue: STANDARD_URI_CONFIG}
   ],
   bootstrap: [AppComponent]
 })

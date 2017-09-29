@@ -14,7 +14,7 @@ export class AboutMeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.aboutMe = this.cvDataService.getCvData().about;
+    this.cvDataService.getCvData().subscribe(res => this.aboutMe = res.about);
   }
 
 }

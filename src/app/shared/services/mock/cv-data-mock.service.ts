@@ -1,6 +1,8 @@
 import {Injectable} from '@angular/core';
-import {CvData} from '../../interfaces/cv-data';
-import {jsonObject} from '../../constants/mock/json-data';
+import {CvData} from '../../entities/cv-data';
+import {Observable} from 'rxjs/Observable';
+import {of} from 'rxjs/observable/of';
+import {cvData} from '../../mock/cv-data';
 
 @Injectable()
 export class CvDataMockService {
@@ -8,8 +10,8 @@ export class CvDataMockService {
   constructor() {
   }
 
-  getCvData(): CvData {
-    return jsonObject;
+  getCvData(): Observable<CvData> {
+    return of(cvData);
   }
 
 }

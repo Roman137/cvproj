@@ -8,13 +8,13 @@ import {CvDataService} from '../shared/services/cv-data.service';
 })
 export class SkillsAndHobbiesComponent implements OnInit {
 
-  skills = null;
+  skillsAndHobbies = null;
 
   constructor(private cvDataService: CvDataService) {
   }
 
   ngOnInit() {
-    this.skills = this.cvDataService.getCvData().skillsAndHobbies;
+    this.cvDataService.getCvData().subscribe(res => this.skillsAndHobbies = res.skillsAndHobbies);
   }
 
 }

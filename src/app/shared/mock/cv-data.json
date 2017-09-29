@@ -1,0 +1,19 @@
+{
+  "about": "My name is Roman. I was born in 1992 in Ivano-Frankivsk, Ukraine. I like playing guitar, composing music and reading the internet. Addicted to mystery and books. Love sci-fi movies and difficult video games. Attracted to smart people and interesting discussions. I'm fond of solving complex problems and not afraid of mentally arduous tasks.",
+  "skillsAndHobbies": [
+    "html",
+    "css",
+    "javascript",
+    "java",
+    "having a cuppa",
+    "sleeping",
+    "playing guitar",
+    "learning new stuff"
+  ],
+  "education": [
+    "School-Lyceum #23, City of Ivano-Frankivsk, 2009",
+    "Bachelor's degree in Computer Science, 2013",
+    "SoftServe IT Academy \"Java Web Development Course\", 2013",
+    "Master's degree in Computer Science, 2014"
+  ]
+}
