@@ -14,6 +14,7 @@ import {SkillsAndHobbiesComponent} from './skills-and-hobbies/skills-and-hobbies
 import {URI_CONFIG} from './shared/config/di-tokens/uri.config';
 import {STANDARD_URI_CONFIG} from './shared/config/standard-uri-config';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {CvDataAjaxJs5Service} from './shared/services/cv-data-ajax-js5.service';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
   ],
   providers: [
     HttpClient,
-    {provide: CvDataService, useClass: CvDataService},
+    {provide: CvDataService, useClass: CvDataAjaxJs5Service},
     {provide: URI_CONFIG, useValue: STANDARD_URI_CONFIG}
   ],
   bootstrap: [AppComponent]
