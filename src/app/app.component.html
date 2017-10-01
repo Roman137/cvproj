@@ -1,9 +1,13 @@
-<!--The whole content below can be removed with the new code.-->
-<div>
-  <div class="header" style="text-align: center">
-    <h1>{{welcomeMsg}}</h1>
-  </div>
+<md-toolbar color="primary">
+  <span class="space-filler"></span>
+  <h1>{{welcomeMsg}}</h1>
+  <span class="space-filler"></span>
+  <md-toolbar-row>
+    <app-nav></app-nav>
+  </md-toolbar-row>
+</md-toolbar>
 
-  <app-nav></app-nav>
-</div>
+<md-card>
+  <router-outlet></router-outlet>
+</md-card>
 

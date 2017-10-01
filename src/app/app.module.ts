@@ -15,6 +15,7 @@ import {URI_CONFIG} from './shared/config/di-tokens/uri.config';
 import {STANDARD_URI_CONFIG} from './shared/config/standard-uri-config';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {CvDataAjaxJs5Service} from './shared/services/cv-data-ajax-js5.service';
+import {MdIconRegistry} from '@angular/material';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import {CvDataAjaxJs5Service} from './shared/services/cv-data-ajax-js5.service';
   ],
   providers: [
     HttpClient,
+    MdIconRegistry,
     {provide: CvDataService, useClass: CvDataAjaxJs5Service},
     {provide: URI_CONFIG, useValue: STANDARD_URI_CONFIG}
   ],
