@@ -16,6 +16,8 @@ import {STANDARD_URI_CONFIG} from './shared/config/standard-uri-config';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {CvDataAjaxJs5Service} from './shared/services/cv-data-ajax-js5.service';
 import {MdIconRegistry} from '@angular/material';
+import {RELATIVE_URI_CONFIG} from './shared/config/relative-uri-config';
+import {environment} from '../environments/environment';
 
 
 @NgModule({
@@ -37,8 +39,11 @@ import {MdIconRegistry} from '@angular/material';
     HttpClient,
     MdIconRegistry,
     {provide: CvDataService, useClass: CvDataAjaxJs5Service},
-    {provide: URI_CONFIG, useValue: STANDARD_URI_CONFIG}
+    {
+      provide: URI_CONFIG, useValue: environment.production === true ? RELATIVE_URI_CONFIG : STANDARD_URI_CONFIG
+    }
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
