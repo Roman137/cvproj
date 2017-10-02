@@ -20,7 +20,6 @@ export class CvDataAjaxJs5Service {
           if (request.status === 200) {
             const reader = new FileReader();
             reader.onload = () => {
-              console.log(reader.result);
               observer.next(JSON.parse(reader.result));
               observer.complete();
             };

@@ -1,15 +1,15 @@
 import {inject, TestBed} from '@angular/core/testing';
 
-import {JsonDataService} from './cv-data.service';
+import {CvDataService} from './cv-data.service';
 
 describe('JsonDataService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [JsonDataService]
+      providers: [CvDataService]
     });
   });
 
-  it('should be created', inject([JsonDataService], (service: JsonDataService) => {
+  it('should be created', inject([CvDataService], (service: CvDataService) => {
     expect(service).toBeTruthy();
   }));
 });
