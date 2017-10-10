@@ -1,13 +1,15 @@
-<md-toolbar color="primary">
-  <span class="space-filler"></span>
-  <h1>{{welcomeMsg}}</h1>
-  <span class="space-filler"></span>
-  <md-toolbar-row>
-    <app-nav></app-nav>
-  </md-toolbar-row>
-</md-toolbar>
+<div class="main-frame">
+  <mat-toolbar color="primary">
+    <span class="space-filler"></span>
+    <h1>{{welcomeMsg}}</h1>
+    <span class="space-filler"></span>
+    <mat-toolbar-row>
+      <app-nav></app-nav>
+    </mat-toolbar-row>
+  </mat-toolbar>
 
-<md-card>
-  <router-outlet></router-outlet>
-</md-card>
+  <mat-card>
+    <router-outlet></router-outlet>
+  </mat-card>
+</div>
 

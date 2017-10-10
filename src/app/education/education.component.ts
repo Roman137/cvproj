@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {CvDataService} from '../shared/services/cv-data.service';
-import {MdIconRegistry} from '@angular/material';
 import {DomSanitizer} from '@angular/platform-browser';
+import {MatIconRegistry} from '@angular/material';
 
 @Component({
   selector: 'app-education',
@@ -11,7 +11,7 @@ import {DomSanitizer} from '@angular/platform-browser';
 export class EducationComponent implements OnInit {
   education = null;
 
-  constructor(private cvDataService: CvDataService, iconRegistry: MdIconRegistry, sanitizer: DomSanitizer) {
+  constructor(private cvDataService: CvDataService, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
       'done',
       sanitizer.bypassSecurityTrustResourceUrl('assets/ic_done_black_24px.svg'));

@@ -10,11 +10,21 @@ export class SkillsAndHobbiesComponent implements OnInit {
 
   skillsAndHobbies = null;
 
+  importantSkills: string[] = [
+    'html',
+    'javascript',
+    'css'
+  ];
+
   constructor(private cvDataService: CvDataService) {
   }
 
   ngOnInit() {
     this.cvDataService.getCvData().subscribe(res => this.skillsAndHobbies = res.skillsAndHobbies);
+  }
+
+  isAnImportantSkill(skillOrHobby: string): boolean {
+    return this.importantSkills.includes(skillOrHobby);
   }
 
 }

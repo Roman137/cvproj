@@ -1,3 +1,9 @@
-<md-chip-list>
-  <md-chip *ngFor="let entry of skillsAndHobbies">{{entry}}</md-chip>
-</md-chip-list>
+<div class="main-frame">
+  <mat-chip-list>
+    <mat-chip [color]="isAnImportantSkill(skillOrHobby) ? 'accent' : 'primary'"
+              *ngFor="let skillOrHobby of skillsAndHobbies"
+              [selected]="true">
+      {{skillOrHobby}}
+    </mat-chip>
+  </mat-chip-list>
+</div>
